@@ -8,9 +8,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function AppNavbar() { 
     return (
-        /* - UBAH className="bg-body-tertiary" MENJADI bg="dark"
-          - TAMBAHKAN data-bs-theme="dark"
-        */
         <Navbar expand="lg" bg="dark" data-bs-theme="dark" sticky="top">
             <Container fluid>
                 <Navbar.Brand href="#">Praktikum Bab 10</Navbar.Brand>
@@ -34,7 +31,6 @@ function AppNavbar() {
                             className="me-2"
                             aria-label="Search"
                         />
-                        {/* Ubah variant tombol agar cocok dengan tema gelap */}
                         <Button variant="outline-light">Search</Button>
                     </Form>
                 </Navbar.Collapse>

@@ -4,14 +4,12 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 function AboutSection() {
   return (
-    // Wrapper <section> Anda sudah benar
     <section id="about">
       <Container className="my-5">
         <Row className="my-4">
           <Col md={6} className="align-self-center mb-3">
             <h2>About Us</h2>
 
-            {/* --- YAPPING DIMULAI --- */}
             <h6 className="text-muted mb-3">What We Do & Why We Do It</h6>
             
             <p>
@@ -21,13 +19,9 @@ function AboutSection() {
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
             </p>
             
-            {/* Tombol "Learn More" yang mengarah ke section contact 
-                Dia akan otomatis berwarna --color-slate-blue karena "variant=primary"
-            */}
             <Button variant="primary" href="#contact">
                 Learn More
             </Button>
-            {/* --- YAPPING SELESAI --- */}
 
           </Col>
           <Col md={6}>
@@ -36,13 +30,13 @@ function AboutSection() {
               alt="About Us" 
               width={500}
               height={500}
-              // Menggunakan variabel border-radius dari globals.css Anda
+             
               style={{ width: '100%', height: 'auto', borderRadius: 'var(--bs-border-radius)' }}
             />
           </Col>
         </Row>
       </Container>
-    </section> // TUTUP WRAPPER
+    </section>
   );
 }
 

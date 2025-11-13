@@ -3,10 +3,9 @@ import localFont from "next/font/local";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 
-// Import komponen Anda
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import StyledComponentsRegistry from "./Registry"; // Import Registry Anda
+import StyledComponentsRegistry from "./Registry";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,8 +19,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Praktikum Bab 10 - Landing Page", // Judul yang lebih baik
-  description: "Project landing page menggunakan Next.js dan Bootstrap", // Deskripsi yang lebih baik
+  title: "Praktikum Bab 10 - Landing Page",
+  description: "Project landing page menggunakan Next.js dan Bootstrap",
 };
 
 export default function RootLayout({

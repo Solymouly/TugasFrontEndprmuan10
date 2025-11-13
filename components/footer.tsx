@@ -4,17 +4,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Footer() {
     return (
-        /* ==========================================================
-           PERUBAHAN DISINI:
-           - HAPUS "bg-light"
-           - TAMBAHKAN bg="dark" (membuat latar belakang gelap)
-           - TAMBAHKAN data-bs-theme="dark" (membuat teks di dalamnya putih)
-           - HAPUS "border-top border-dark-subtle" (tidak diperlukan lagi)
-           ========================================================== */
         <footer id="footer" className="pt-md-5 pd-md-2 py-3 bg-dark" data-bs-theme="dark">
             <Container>
                 <Row>
-                    {/* Our Products */}
                     <Col md={3}>
                         <h3>Our Products</h3>
                         <ul className="list-unstyled">
@@ -25,7 +17,6 @@ export default function Footer() {
                             <li className="mb-2"><a href="#">Circular</a></li>
                         </ul>
                     </Col>
-                    {/* Quick Link */}
                     <Col md={3}>
                         <h3>Quick Link</h3>
                         <ul className="list-unstyled">
@@ -36,7 +27,6 @@ export default function Footer() {
                             <li className="mb-2"><a href="#">Products</a></li>
                         </ul>
                     </Col>
-                    {/* Terms */}
                     <Col md={3}>
                         <h3>Terms</h3>
                         <ul className="list-unstyled">
@@ -45,13 +35,11 @@ export default function Footer() {
                             <li className="mb-2"><a href="#">License</a></li>
                         </ul>
                     </Col>
-                    {/* Search + Social */}
                     <Col md={3}>
                         <h3>Search Here</h3>
                         <Form className="mb3">
                             <InputGroup>
                                 <Form.Control type="text" placeholder="Search Here" />
-                                {/* UBAH tombol Search agar cocok dengan tema gelap */}
                                 <Button variant="outline-light">Search</Button>
                             </InputGroup>
                         </Form>
@@ -64,11 +52,8 @@ export default function Footer() {
                             <li><a href="#"><i className="bi bi-pinterest fs-4"></i></a></li>
                         </ul>
                     </Col>
-                    {/* Copyright */}
                     <Row className="mt-3">
                         <Col md={12} className="text-center">
-                            {/* Hapus <hr> ini karena tidak diperlukan lagi dengan border di Navbar dan Footer */}
-                            {/* <hr></hr> */}
                             <p className="mb-0">All rights reserved by @ Mika Valentino</p>
                         </Col>
                     </Row>
